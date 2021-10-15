@@ -9,7 +9,7 @@ The pycryptodome was used for AES algorithm.
 pip install pycryptomode
 pip install pyaes
 ```
-## Descriptionof solving the problem ##
+## Description of solving the problem ##
 The first step was to write algorithms for the ECB and OFB. The text has been split into 16 bytes pieces and then the pieces has been encrypted. The same thing with the decryption, I splitted the ciphertext into 16 bytes blocks and decrypted them. If after splitting the block has less than 16 bytes, I complete it as long as it has less than 16 bytes with null bytes. With the help of get_random_bytes() function I generate a IV. <br />
 The second step was to write two classes, one for MC node and one for the A and B nodes. <br />
 The nodeMC class is the manager and has a "k1" key for ECB mode and a "k2" key for OFB mode. The common "k" key is used by all classes. With the help of get_random_bytes() function I generate the "k1" and "k2" keys. The getk1 and getk2 send the desired key encrypted with AES and the "k" key. <br />
