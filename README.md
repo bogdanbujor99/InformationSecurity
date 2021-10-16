@@ -3,8 +3,8 @@
 ## Description of the working medium: ##
 The programming language I used is python. <br />
 I used the pyaes and pycryptodome libraries. <br />
-The pyaes library was used for random generation. <br /> 
-The pycryptodome was used for AES algorithm.
+The pycryptodome library was used for random generation. <br /> 
+The pyaes library was used for AES algorithm.
 ```
 pip install pycryptomode
 pip install pyaes
