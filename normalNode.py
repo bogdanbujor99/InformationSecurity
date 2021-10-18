@@ -36,6 +36,7 @@ class normalNode:
 
 
     def decripto(self):
+        print(self.ciphertext)
         if(self.mode=="ECB"):
             self.finalMessage = Bytes_16_decrypted_ECB(self.ciphertext,self.k_mode)
             print(self.finalMessage)

@@ -6,6 +6,8 @@ iv = get_random_bytes(16)
 
 def ofb_encrypted(plaintext,key):
     global array_encrypt
+    global array_decrypt
+    array_decrypt = []
     aes = pyaes.AES(key)
     if(len(array_encrypt)==0):
         array_encrypt = aes.encrypt(iv)
@@ -20,6 +22,8 @@ def ofb_encrypted(plaintext,key):
 
 def ofb_decrypted(ciphertext,key):
     global array_decrypt
+    global array_encrypt
+    array_encrypt = []
     aes = pyaes.AES(key)
     if(len(array_decrypt)==0):
         array_decrypt = aes.encrypt(iv)
